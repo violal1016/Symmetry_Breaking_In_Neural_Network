@@ -1,0 +1,13 @@
+LoadPackage ("equideg");
+G := SymmetricGroup ( 5 );
+ccs_G := ConjugacyClassesSubgroups ( G );
+SetCCSsAbbrv ( G , [ "Z1", "D1", "Z2", "Z3","V4", "Z4", "D2", "Z5", "D3"," tD3 ", "Z6", "D4", "D5", "A4", "D6", " F20 ","S4", "A5", "S5"] );
+tbl := CharacterTable ( G );
+Display ( tbl );
+deg4 := BasicDegree ( Irr ( G )[4]);
+deg5 := BasicDegree ( Irr ( G )[5]);
+deg6 := BasicDegree ( Irr ( G )[6]);
+
+inv456:=deg4*deg5*deg6;
+inv6a2:=inv456-deg4*deg5;
+inv7:=deg4*deg5-deg4*deg5*deg7;
